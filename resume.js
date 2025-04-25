@@ -18,10 +18,11 @@ var initProgram = setTimeout(function(){
     var greeting = "Hello and Welcome!";
     var message = "RUNNING SECURITY ARCHITECH RESUME FOR BONEY";
     var $identityDiv = $("#identity-results");
-    var $name = "NAME: Boney Warikozi";
-    var $alias = "KNOWN ALIAS: "
-    var $occupation  = "OCCUPATION: FRONT END DEVELOPER | WORDPRESS DEVLOPER | DESIGNER";
-    var $frontEnd  = "FRONT END DEVELOPMENT CORE: HTML5 | CSS3 | JAVASCRIPT";
+    var $name = "Name: Boney Warikozi";
+    var $alias = "Email: Boney.Warikozi@outlook.com"
+    var $occupation  = "Phone: 501-333-4371";
+    var $gitCo = "Github: https://github.com/Boney5889";
+    var $frontEnd  = "Github: https://github.com/Boney5889";
     var $JSFrameworks = "JAVASCRIPT FRAMEWORKS: ANGULARJS";
     var $JSLibs = "JAVASCRIPT LIBRARIES: JQUERY | D3 | C3";
     var $CSSFrameworks = "CSS FRAMEWORKS: BOOTSTRAP | SEMANTIC UI";
@@ -101,6 +102,20 @@ var initProgram = setTimeout(function(){
                 }, 1500);
             }
         }
+
+        const initGit = i => {
+            $("#gitCo").addClass("sign cursor").text($gitCo.substring(0, i));
+            if(i < $gitCo.length){
+                setTimeout(function(){
+                    initGit(i + 1);
+                }, 35);
+            }else{
+                $("#gitCo").removeClass("cursor");
+                setTimeout(function() {
+                    initFrontEnd(0);
+                }, 1500);
+            }
+        };
         function initFrontEnd(i){
             $('#front-end-span').addClass('fa fa-wrench');
             $('#front-end').addClass("cursor").text($frontEnd.substring(0, i));

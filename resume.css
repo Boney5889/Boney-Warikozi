@@ -59,7 +59,7 @@ i{
 	animation: cursor 1s infinite;
 }
 .sign:before{
-   content: "> ";
+   content: "";
 }
 @keyframes cursor {
 	0% {
