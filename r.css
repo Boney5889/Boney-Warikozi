@@ -208,7 +208,10 @@ a{color:$linkColor; text-decoration:none;}
     color: #00ebd4;
     @include breakpoint(baby-bear) {width:100%;margin-bottom:40px;} 
   }
+
+
   .experience-title {
+      color: #E7ECEF;
       color: #5bc0de;
       margin-bottom:15px;;
     }
