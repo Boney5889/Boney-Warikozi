@@ -19,23 +19,32 @@ var initProgram = setTimeout(function(){
     var job = "Unversity of Marland Globle Compass"
     var message = "RUNNING SECURITY ARCHITECH RESUME FOR BONEY";
     var $identityDiv = $("#identity-results");
-    var $edu = "Unversity Of Marland Gloable Campuss"
-    var $name = "Name: Boney Warikozi";
-    var $alias = "Email: Boney.Warikozi@outlook.com"
-    var $occupation  = "Phone: 501-333-4371";
-    var $gitCo = "Github: https://github.com/Boney5889";
-    var $frontEnd  = "Github: https://github.com/Boney5889";
-    var $JSFrameworks = "JAVASCRIPT FRAMEWORKS: ANGULARJS";
-    var $JSLibs = "JAVASCRIPT LIBRARIES: JQUERY | D3 | C3";
-    var $CSSFrameworks = "CSS FRAMEWORKS: BOOTSTRAP | SEMANTIC UI";
-    var $CSSPre = "CSS PREPROCESSORS: SASS | LESS | STYLUS";
-    var $frontEndAnimation = "FRONT END ANIMATION: CANVAS | HTML5 | SVG";
-    var $cmsDevelopment = "WORDPRESS DEVELOPMENT: WORDPRESS";
-    var $wordpress = "WORDPRESS: CUSTOM THEMING | PLUGINS";
-    var $design = "Github: https://github.com/Boney5889\"";
-    var $webDesign = "Github: https://github.com/Boney5889";
-    var $branding = "Website: securityarchitech.com";
-    var $designAnimation = "ANIMATION DESIGN: AFTER EFFECTS CC | FLASH CC";
+    var $name = "Unversity of Marland Globle Compass";
+    var $alias = " Aug 2023 - Aug 2025"
+    var $occupation  = "Software Development and Security";
+    var $frontEnd  = "Bachelor’s degree in software development and security\n" +
+        "Coursework: Software Development, Cloud Programming, and\n" +
+        "Cybersecurity\n" +
+        "GPA: 3.7";
+    var $JSFrameworks = "Austin Community College";
+    var $JSLibs = "Aug 2018 - Aug 2020";
+    var $CSSFrameworks = "Associate degree of Applied Science in Local Area Network\n" +
+        "Administration";
+    var $CSSPre = "Coursework: Cybersecurity, Advance Routers and Switches, Network\n" +
+        "TCP/IP, Cloud Computing, Firewalls and Network Security,\n \n" +
+        "GPA: 3.6";
+    var $frontEndAnimation = "WORK EXPERIENCE";
+    var $cmsDevelopment = "Charter Communication - Spectrum";
+    var $wordpress = "April 2022–present";
+    var $design = "Technician level 5+";
+    var $webDesign = "• Install and maintain internet, voice, and cable services.\n \n" +
+        "• Troubleshoot technical issues at customer premises.\n \n" +
+        "• Optimize network performance and reliability.\n \n" +
+        "• Deliver exceptional customer service in residential and business\n \n" +
+        "settings.";
+    var $branding = "Everise";
+    var $designAnimation = "May 17, 2021–April 2022";
+    var $rise = "Tier 1 Technical Support Agent";
 
     function initIdentityResults(i){
         $("#message").addClass("sign cursor").text(message.substring(0, i));
@@ -108,78 +117,78 @@ var initProgram = setTimeout(function(){
 
         function initFrontEnd(i){
             $('#front-end-span').addClass('fa fa-wrench');
-            $('#front-end').addClass("cursor").text($frontEnd.substring(0, i));
+            $('#frontEnd').addClass("cursor").text($frontEnd.substring(0, i));
             if(i < $frontEnd.length){
                 setTimeout(function(){
                     initFrontEnd(i + 1);
                 }, 35);
             }else{
-                $('#front-end').removeClass("cursor");
+                $('#frontEnd').removeClass("cursor");
                 setTimeout(function() {
                     initJSFrameworks(0);
                 }, 1500);
             }
         }
         function initJSFrameworks(i){
-            $('#js-frameworks').addClass("sign cursor").text($JSFrameworks.substring(0, i));
+            $('#JSFrameworks').addClass("sign cursor").text($JSFrameworks.substring(0, i));
             if(i < $JSFrameworks.length){
                 setTimeout(function(){
                     initJSFrameworks(i + 1);
                 }, 35);
             }else{
-                $('#js-frameworks').removeClass("cursor");
+                $('#JSFrameworks').removeClass("cursor");
                 setTimeout(function() {
                     initJSLibs(0);
                 }, 1500);
             }
         }
         function initJSLibs(i){
-            $('#js-libs').addClass("sign cursor").text($JSLibs.substring(0, i));
+            $('#JSLibs').addClass("sign cursor").text($JSLibs.substring(0, i));
             if(i < $JSLibs.length){
                 setTimeout(function(){
                     initJSLibs(i + 1);
                 }, 35);
             }else{
-                $('#js-libs').removeClass("cursor");
+                $('#JSLibs').removeClass("cursor");
                 setTimeout(function() {
                     initCSSFrameworks(0);
                 }, 1500);
             }
         }
         function initCSSFrameworks(i){
-            $('#css-frameworks').addClass("sign cursor").text($CSSFrameworks.substring(0, i));
+            $('#CSSFrameworks').addClass("sign cursor").text($CSSFrameworks.substring(0, i));
             if(i < $CSSFrameworks.length){
                 setTimeout(function(){
                     initCSSFrameworks(i + 1);
                 }, 35);
             }else{
-                $('#css-frameworks').removeClass("cursor");
+                $('#CSSFrameworks').removeClass("cursor");
                 setTimeout(function() {
                     initCSSPre(0);
                 }, 1500);
             }
         }
         function initCSSPre(i){
-            $('#css-pre').addClass("sign cursor").text($CSSPre.substring(0, i));
+            $('#CSSPre').addClass("sign cursor").text($CSSPre.substring(0, i));
             if(i < $CSSPre.length){
                 setTimeout(function(){
                     initCSSPre(i + 1);
                 }, 35);
             }else{
-                $('#css-pre').removeClass("cursor");
+                $('#CSSPre').removeClass("cursor");
                 setTimeout(function() {
                     initFrontEndAnimation(0);
                 }, 1500);
             }
         }
         function initFrontEndAnimation(i){
-            $('#front-end-animation').addClass("sign cursor").text($frontEndAnimation.substring(0, i));
+            $('#frontEndAnimation').addClass("sign cursor").text($frontEndAnimation.substring(0, i));
             if(i < $frontEndAnimation.length){
                 setTimeout(function(){
                     initFrontEndAnimation(i + 1);
                 }, 35);
             }else{
-                $('#front-end-animation').removeClass("cursor");
+                $('#frontEndAnimation').removeClass("cursor");
                 setTimeout(function() {
                     initCMSDevelopment(0);
                 }, 1500);
@@ -187,13 +196,13 @@ var initProgram = setTimeout(function(){
         }
         function initCMSDevelopment(i){
             $('#cms-span').addClass("fa fa-wordpress")
-            $('#CMS-development').addClass("cursor").text($cmsDevelopment.substring(0, i));
+            $('#cmsDevelopment').addClass("cursor").text($cmsDevelopment.substring(0, i));
             if(i < $cmsDevelopment.length){
                 setTimeout(function(){
                     initCMSDevelopment(i + 1);
                 }, 35);
             }else{
-                $('#CMS-development').removeClass("cursor");
+                $('#cmsDevelopment').removeClass("cursor");
                 setTimeout(function() {
                     initWordpress(0);
                 }, 1500);
@@ -227,13 +236,13 @@ var initProgram = setTimeout(function(){
             }
         }
         function initWebDesign(i){
-            $('#web-design').addClass("sign cursor").text($webDesign.substring(0, i));
+            $('#webDesign').addClass("sign cursor").text($webDesign.substring(0, i));
             if(i < $webDesign.length){
                 setTimeout(function(){
                     initWebDesign(i + 1);
                 }, 35);
             }else{
-                $('#web-design').removeClass("cursor");
+                $('#webDesign').removeClass("cursor");
                 setTimeout(function() {
                     initBranding(0);
                 }, 1500);
@@ -253,15 +262,30 @@ var initProgram = setTimeout(function(){
             }
         }
         function initDesignAnimation(i){
-            $('#design-animation').addClass("sign cursor").text($designAnimation.substring(0, i));
+            $('#designAnimation').addClass("sign cursor").text($designAnimation.substring(0, i));
             if(i < $designAnimation.length){
                 setTimeout(function(){
                     initDesignAnimation(i + 1);
                 }, 35);
             }else{
-                //$('#design-animation').removeClass("cursor");
+                $('#designAnimation').removeClass("cursor");
+                setTimeout(function () {
+                    initJobDesForEveris(0);
+                }, 1500);
             }
         }
+
+        function initJobDesForEveris(i) {
+            $('#rise').addClass("sign cursor").text($rise.substring(0, i));
+            if(i < $rise.length){
+                setTimeout(function() {
+                    initJobDesForEveris( i + 1);
+                }, 35);
+            }else{
+                //
+            }
+        }
+
     }
 
     function initProgramAlpha(i){
