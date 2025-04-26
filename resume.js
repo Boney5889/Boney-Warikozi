@@ -15,9 +15,11 @@ setTimeout(function() {
 }, 1500);
 
 var initProgram = setTimeout(function(){
-    var greeting = "Hello and Welcome!";
+    var greeting = "Education";
+    var job = "Unversity of Marland Globle Compass"
     var message = "RUNNING SECURITY ARCHITECH RESUME FOR BONEY";
     var $identityDiv = $("#identity-results");
+    var $edu = "Unversity Of Marland Gloable Campuss"
     var $name = "Name: Boney Warikozi";
     var $alias = "Email: Boney.Warikozi@outlook.com"
     var $occupation  = "Phone: 501-333-4371";
@@ -30,9 +32,9 @@ var initProgram = setTimeout(function(){
     var $frontEndAnimation = "FRONT END ANIMATION: CANVAS | HTML5 | SVG";
     var $cmsDevelopment = "WORDPRESS DEVELOPMENT: WORDPRESS";
     var $wordpress = "WORDPRESS: CUSTOM THEMING | PLUGINS";
-    var $design = "DESIGN CORE: ADOBE SUITE";
-    var $webDesign = "WEB DESIGN: INDESIGN CC | MUSE CC";
-    var $branding = "ILLUSTRATIONS & BRANDING: ILLUSTRATOR CC | PHOTOSHOP CC";
+    var $design = "Github: https://github.com/Boney5889\"";
+    var $webDesign = "Github: https://github.com/Boney5889";
+    var $branding = "Website: securityarchitech.com";
     var $designAnimation = "ANIMATION DESIGN: AFTER EFFECTS CC | FLASH CC";
 
     function initIdentityResults(i){
@@ -75,6 +77,7 @@ var initProgram = setTimeout(function(){
             setTimeout(function() {
                 initName(0);
             }, 2500);
+
         }
         function initAlias(i){
             $("#alias").addClass("sign cursor").text($alias.substring(0, i));
@@ -103,19 +106,6 @@ var initProgram = setTimeout(function(){
             }
         }
 
-        const initGit = i => {
-            $("#gitCo").addClass("sign cursor").text($gitCo.substring(0, i));
-            if(i < $gitCo.length){
-                setTimeout(function(){
-                    initGit(i + 1);
-                }, 35);
-            }else{
-                $("#gitCo").removeClass("cursor");
-                setTimeout(function() {
-                    initFrontEnd(0);
-                }, 1500);
-            }
-        };
         function initFrontEnd(i){
             $('#front-end-span').addClass('fa fa-wrench');
             $('#front-end').addClass("cursor").text($frontEnd.substring(0, i));
@@ -285,6 +275,7 @@ var initProgram = setTimeout(function(){
             initIdentityResults(0);
         }
     }
+
     initProgramAlpha(0)
 
 }, 1500);
