@@ -178,7 +178,7 @@ a{color:$linkColor; text-decoration:none;}
   width:60%;
   float:left;
   position:relative;
-  color:$skillsColor;
+  color:skillsColor;
   font-weight:300;
   min-height:100%;
   min-height:100vh;
@@ -205,10 +205,11 @@ a{color:$linkColor; text-decoration:none;}
     text-align:left;
     padding-right:5%;
     margin-bottom:60px;
+    color: #00ebd4;
     @include breakpoint(baby-bear) {width:100%;margin-bottom:40px;} 
   }
   .experience-title {
-      color:white;
+      color: #5bc0de;
       margin-bottom:15px;;
     }
 }
