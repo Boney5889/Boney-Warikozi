@@ -49,7 +49,24 @@ var initProgram = setTimeout(function(){
         "• Effectively troubleshoot the mesh system through a framework and\n" +
         "explain technical information to users of all levels.\n" +
         "• Find ways for customers to get the most out of their wireless\n" +
-        "network."
+        "network.";
+    var $h = "Profile";
+    var $habitpara = "As a graduate in Cyber Operations\n" +
+        "with a specialization in software\n" +
+        "development and security, I bring\n" +
+        "comprehensive knowledge of the\n" +
+        "secure software development lifecycle\n" +
+        "and cybersecurity frameworks. I am\n" +
+        "proficient in designing and\n" +
+        "implementing secure architectures for\n" +
+        "enterprise systems, with strengths in\n" +
+        "threat modeling and vulnerability\n" +
+        "assessment.\n" +
+        "Knowledge without experience is\n" +
+        "obsolete. Weekly, I conduct a project\n" +
+        "to demonstrate and sharpen my\n" +
+        "knowledge. Some of my work can be\n" +
+        "found on the website below.";
 
     function initIdentityResults(i){
         $("#message").addClass("sign cursor").text(message.substring(0, i));
@@ -301,7 +318,39 @@ var initProgram = setTimeout(function(){
                     initparagraph(i + 1);
                 }, 35);
             }else{
-                //
+                $('#para').removeClass("cursor");
+                setTimeout(function () {
+                    inithabit(0);
+                }, 1500);
+
+            }
+        }
+
+        function inithabit(i) {
+            $('#h').addClass("sign cursor").text($h.substring(0, i));
+            if(i < $h.length){
+                setTimeout(function() {
+                    inithabit( i + 1);
+                }, 35);
+            }else{
+                $('#h').removeClass("cursor");
+                setTimeout(function (){
+                    initHabitPara(0);
+                }, 1500);
+            }
+        }
+
+        function initHabitPara(i) {
+            $('#habitpara').addClass("sign cursor").text($habitpara.substring(0, i));
+            if(i < $habitpara.length){
+                setTimeout(function() {
+                    initHabitPara( i + 1);
+                }, 35);
+            }else{
+                //$('#habitpara').removeClass("cursor");
+                //setTimeout(function (){
+                   // initHabitPara(0);
+               // }, 1500);
             }
         }
 
