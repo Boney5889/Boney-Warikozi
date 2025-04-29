@@ -45,6 +45,11 @@ var initProgram = setTimeout(function(){
     var $branding = "Everise";
     var $designAnimation = "May 17, 2021–April 2022";
     var $rise = "Tier 1 Technical Support Agent";
+    var $para = "• Worked with a wireless mesh system.\n" +
+        "• Effectively troubleshoot the mesh system through a framework and\n" +
+        "explain technical information to users of all levels.\n" +
+        "• Find ways for customers to get the most out of their wireless\n" +
+        "network."
 
     function initIdentityResults(i){
         $("#message").addClass("sign cursor").text(message.substring(0, i));
@@ -280,6 +285,20 @@ var initProgram = setTimeout(function(){
             if(i < $rise.length){
                 setTimeout(function() {
                     initJobDesForEveris( i + 1);
+                }, 35);
+            }else{
+                $('#rise').removeClass("cursor");
+                setTimeout(function (){
+                    initparagraph(0);
+                }, 1500);
+            }
+        }
+
+        function initparagraph(i){
+            $('#para').addClass("sign cursor").text($para.substring(0, i));
+            if(i < $para.length){
+                setTimeout(function(){
+                    initparagraph(i + 1);
                 }, 35);
             }else{
                 //
