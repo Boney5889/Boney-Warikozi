@@ -30,13 +30,16 @@ $time:0.6s;
 }
 
 html,body {
-  height: 100%;
+  min-height: 100vh;
+  
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
   font-size:16px;
   line-height:1.5em;
+  min-height; 100vh;
+  	
 }
 a{color:$linkColor; text-decoration:none;}
 .clearfix::after, .clearfix::before {
@@ -46,11 +49,6 @@ a{color:$linkColor; text-decoration:none;}
 
 .bold {color:$boldColor; font-weight:400;}
 
-.resume-wrapper {
-  position:relative;
-  text-align:center;
-  height:100%;
-}
 
 .container {
   min-height:600px;
@@ -106,7 +104,6 @@ a{color:$linkColor; text-decoration:none;}
         display:table-cell;
         vertical-align: middle;
         position:relative;
-        margin:0 auto;
         z-index:10;
        text-align:center
     }
@@ -177,19 +174,22 @@ a{color:$linkColor; text-decoration:none;}
   background:$skillsBg;
   width:60%;
   float:left;
-  position:relative;
   color:skillsColor;
+  min-height: 100vh;
   font-weight:300;
   min-height:100%;
   min-height:100vh;
-  @include breakpoint(brother-bear) { width: 100%; } 
+  position:relative;
+
+  @include breakpoint(brother-bear) { width: 100%; }
+  
   h3.experience-title {
     color:$linkColor;
-    text-align:left;
     text-transform:uppercase;
     font-size:1.2em;
     margin-bottom:20px;
     font-weight:400;
+    text-align:left;
   }
   .company-wrapper {
     width:30%;
@@ -209,7 +209,6 @@ a{color:$linkColor; text-decoration:none;}
     @include breakpoint(baby-bear) {width:100%;margin-bottom:40px;} 
   }
 
-
   .experience-title {
       color: #E7ECEF;
       color: #5bc0de;
@@ -217,10 +216,10 @@ a{color:$linkColor; text-decoration:none;}
     }
 }
 
-.section-padding {
- padding:60px 60px 40px 40px;
- @include breakpoint(brother-bear) { padding:80px 15% 40px 10%; }
- @include breakpoint(baby-bear) { padding:40px 10% 20px 5%; }
+.resume-wrapper {
+    position:relative;
+    text-align:center;
+    height:100%;
 }
 
 .section-wrapper {
@@ -279,3 +278,29 @@ a{color:$linkColor; text-decoration:none;}
 @keyframes skill_5 {from {width:0%;}to {width:70%;}}  
 @keyframes skill_6 {from {width:0%;}to {width:70%;}}
 @keyframes skill_7 {from {width:0%;}to {width:70%;}}
+
+
+/*******************************
+
+
+@media (min-width: 600px) {
+    body {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+
+ .section-padding {
+     padding:60px 60px 40px 40px;
+     @include breakpoint(brother-bear) { padding:80px 15% 40px 10%; }
+     @include breakpoint(baby-bear) { padding:40px 10% 20px 5%; }
+ }
+ 
+.picture-resume {
+   
+    span {       
+        margin:0 auto;
+   
+    }
+		
+}

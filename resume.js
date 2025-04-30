@@ -36,7 +36,7 @@ var initProgram = setTimeout(function(){
     var $frontEndAnimation = "WORK EXPERIENCE";
     var $cmsDevelopment = "Charter Communication - Spectrum";
     var $wordpress = "April 2022–present";
-    var $design = "Technician level 5+";
+    var $design = "Bussines Class level 5+";
     var $webDesign = "• Install and maintain internet, voice, and cable services.\n \n" +
         "• Troubleshoot technical issues at customer premises.\n \n" +
         "• Optimize network performance and reliability.\n \n" +

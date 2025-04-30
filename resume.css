@@ -12,6 +12,7 @@
 
 body{
    background-color: black;
+    min-height: 100vh;
 }
 
 h1{
@@ -101,4 +102,15 @@ img{
    display: inline;
    margin-left: 10px;
 }
+
+/****************************************************/
+
+
+@media (min-width: 600px) {
+    body {
+        width: 60%;
+    }
+		
+}
+
 
