@@ -68,11 +68,11 @@ var initProgram = setTimeout(function(){
         "knowledge. Some of my work can be\n" +
         "found on the website below.";
     var $myname = "Name: Boney Warikozi";
-    var $myemail = "Email: Boney.Warikozi@gmail.com"
-    var $website = "Website: https://security-engineer.com"
-    var $github = " GitHub: https://github.com/Boney5889"
+    var $myemail = "Email: Boney.Warikozi@gmail.com";
+    var $website = "Website: https://security-engineer.com";
+    var $github = " GitHub: https://github.com/Boney5889";
     var $resume = "Resume: https://Boney5889.github.io/Boney-Warikozi/";
-    var $phone = "Phone : 501-333-4371"
+    var $phone = "Phone : 501-333-4371";
 
     function initIdentityResults(i){
         $("#message").addClass("sign cursor").text(message.substring(0, i));
