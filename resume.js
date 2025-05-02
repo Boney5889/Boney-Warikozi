@@ -67,6 +67,12 @@ var initProgram = setTimeout(function(){
         "to demonstrate and sharpen my\n" +
         "knowledge. Some of my work can be\n" +
         "found on the website below.";
+    var $myname = "Name: Boney Warikozi";
+    var $myemail = "Email: Boney.Warikozi@gmail.com"
+    var $website = "Website: https://security-engineer.com"
+    var $github = " GitHub: https://github.com/Boney5889"
+    var $resume = "Resume: https://Boney5889.github.io/Boney-Warikozi/";
+    var $phone = "Phone : 501-333-4371"
 
     function initIdentityResults(i){
         $("#message").addClass("sign cursor").text(message.substring(0, i));
@@ -347,13 +353,92 @@ var initProgram = setTimeout(function(){
                     initHabitPara( i + 1);
                 }, 35);
             }else{
-                //$('#habitpara').removeClass("cursor");
-                //setTimeout(function (){
-                   // initHabitPara(0);
-               // }, 1500);
+                $('#habitpara').removeClass("cursor");
+                setTimeout(function (){
+                   initMyName(0);
+                }, 1500);
             }
         }
 
+        function initMyName(i) {
+            $('#myname').addClass("sign cursor").text($myname.substring(0, i));
+            if(i < $myname.length){
+                setTimeout(function() {
+                    initMyName( i + 1);
+                }, 35);
+            }else{
+                $('#myname').removeClass("cursor");
+                setTimeout(function (){
+                    initMyEmail(0);
+                }, 1500);
+            }
+        }
+
+
+        function initMyEmail(i) {
+            $('#myemail').addClass("sign cursor").text($myemail.substring(0, i));
+            if(i < $myemail.length){
+                setTimeout(function() {
+                    initMyEmail( i + 1);
+                }, 35);
+            }else{
+                $('#myemail').removeClass("cursor");
+                setTimeout(function (){
+                    initWebsite(0);
+                }, 1500);
+            }
+        }
+
+        function initWebsite(i) {
+            $('#website').addClass("sign cursor").text($website.substring(0, i));
+            if(i < $website.length){
+                setTimeout(function() {
+                    initWebsite( i + 1);
+                }, 35);
+            }else{
+                $('#website').removeClass("cursor");
+                setTimeout(function (){
+                    initGitHub(0);
+                }, 1500);
+            }
+        }
+
+        function initGitHub(i) {
+            $('#github').addClass("sign cursor").text($github.substring(0, i));
+            if(i < $github.length){
+                setTimeout(function() {
+                    initGitHub( i + 1);
+                }, 35);
+            }else{
+                $('#github').removeClass("cursor");
+                setTimeout(function (){
+                    initResume(0);
+                }, 1500);
+            }
+        }
+
+        function initResume(i) {
+            $('#resume').addClass("sign cursor").text($resume.substring(0, i));
+            if(i < $resume.length){
+                setTimeout(function() {
+                    initResume( i + 1);
+                }, 35);
+            }else{
+                $('#resume').removeClass("cursor");
+                setTimeout(function (){
+                    initPhoneNum(0);
+                }, 1500);
+            }
+        }
+
+        function initPhoneNum(i) {
+            $('#phone').addClass("sign cursor").text($phone.substring(0, i));
+            if (i < $phone.length) {
+                setTimeout(function () {
+                    initPhoneNum(i + 1);
+                }, 35);
+            }
+        }
     }
 
     function initProgramAlpha(i){
