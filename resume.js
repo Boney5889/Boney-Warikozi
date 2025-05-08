@@ -61,18 +61,21 @@ var initProgram = setTimeout(function(){
         "implementing secure architectures for\n" +
         "enterprise systems, with strengths in\n" +
         "threat modeling and vulnerability\n" +
-        "assessment.\n" +
-        "Knowledge without experience is\n" +
-        "obsolete. Weekly, I conduct a project\n" +
-        "to demonstrate and sharpen my\n" +
-        "knowledge. Some of my work can be\n" +
-        "found on the website below.";
+        "assessment.";
     var $myname = "Name: Boney Warikozi";
     var $myemail = "Email: Boney.Warikozi@gmail.com";
     var $website = "Website: https://security-engineer.com";
     var $github = " GitHub: https://github.com/Boney5889";
     var $resume = "Resume: https://Boney5889.github.io/Boney-Warikozi/";
     var $phone = "Phone : 501-333-4371";
+    var $title = "Habits"
+    var $myhabits = "Dedicated technologist combining rigorous analytical thinking with disciplined physical training practices. Through consistent engagement in competitive combat sports (Boxing and Muay Thai), I've developed exceptional mental resilience and strategic problem-solving abilities. These athletic pursuits complement my technical expertise in Computer Science, fostering a unique combination of logical precision and creative solution development. Regular participation in high-intensity training sessions has honed my time management skills, allowing me to maintain peak academic performance while pursuing advanced technical projects";
+    var $skills = "Skills";
+    var $skill1 = "Knowledge of DevSecOps practices and tools.";
+    var $skill2 = "Experience in AWS infrastructure, Microsofot Azura cloud, and Database management systems.";
+    var $skill3 = "Knowledge ensuring systems and processes comply with relevant laws and requlations such as NIST and PCI DSS.";
+    var $skill4 = "Strong grasp of multiple programming languages.";
+    var $skill5 = "Secure coding practices and standards.";
 
     function initIdentityResults(i){
         $("#message").addClass("sign cursor").text(message.substring(0, i));
@@ -437,8 +440,127 @@ var initProgram = setTimeout(function(){
                 setTimeout(function () {
                     initPhoneNum(i + 1);
                 }, 35);
+            }else{
+                $('#phone').removeClass("cursor");
+                setTimeout(function () {
+                    initTitleMyHabit(0);
+                }, 1500);
             }
         }
+
+        function initTitleMyHabit(i) {
+            $('#title').addClass("sign cursor").text($title.substring(0, i));
+            if (i < $title.length) {
+                setTimeout(function () {
+                    initTitleMyHabit(i + 1);
+                }, 35);
+            }else{
+                $('#title').removeClass("cursor");
+                setTimeout(function () {
+                    initMyHabit(0);
+                }, 1500);
+            }
+        }
+
+        function initMyHabit(i){
+            $('#myhabits').addClass("sign cursor").text($myhabits.substring(0, i));
+            if (i < $myhabits.length) {
+                setTimeout(function (){
+                    initMyHabit(i + 1);
+                }, 35);
+            }else{
+                $('#myhabits').removeClass("cursor");
+                setTimeout(function (){
+                    initSkills(0);
+                }, 1500);
+            }
+        }
+
+        function initSkills(i) {
+            $('#skills').addClass("sign cursor").text($skills.substring(0, i));
+            if (i < $skills.length) {
+                setTimeout(function () {
+                    initSkills(i + 1);
+                }, 35);
+            }else{
+                $('#skills').removeClass("cursor");
+                setTimeout(function () {
+                    initSkill1(0);
+                }, 1500);
+            }
+        }
+
+        function initSkill1(i){
+            $('#skill1').addClass("sign cursor").text($skill1.substring(0, i));
+            if (i < $skill1.length) {
+                setTimeout(function (){
+                    initSkill1(i + 1);
+                }, 35);
+            }else{
+                $('#skill1').removeClass("cursor");
+                setTimeout(function (){
+                    initSkill2(0);
+                }, 1500);
+            }
+        }
+
+        function initSkill2(i){
+            $('#skill2').addClass("sign cursor").text($skill2.substring(0, i));
+            if (i < $skill2.length) {
+                setTimeout(function (){
+                    initSkill2(i + 1);
+                }, 35);
+            }else{
+                $('#skill2').removeClass("cursor");
+                setTimeout(function (){
+                    initSkill3(0);
+                }, 1500);
+            }
+        }
+
+        function initSkill3(i){
+            $('#skill3').addClass("sign cursor").text($skill3.substring(0, i));
+            if (i < $skill3.length) {
+                setTimeout(function (){
+                    initSkill3(i + 1);
+                }, 35);
+            }else{
+                $('#skill3').removeClass("cursor");
+                setTimeout(function (){
+                    initSkill4(0);
+                }, 1500);
+            }
+        }
+
+        function initSkill4(i){
+            $('#skill4').addClass("sign cursor").text($skill4.substring(0, i));
+            if (i < $skill4.length) {
+                setTimeout(function (){
+                    initSkill4(i + 1);
+                }, 35);
+            }else{
+                $('#skill4').removeClass("cursor");
+                setTimeout(function (){
+                    initSkill5(0);
+                }, 1500);
+            }
+        }
+
+        function initSkill5(i){
+            $('#skill5').addClass("sign cursor").text($skill5.substring(0, i));
+            if (i < $skill5.length) {
+                setTimeout(function (){
+                    initSkill5(i + 1);
+                }, 35);
+            }else{
+                //$('#skill5').removeClass("cursor");
+                //setTimeout(function (){
+                    //initSkill(0);
+               // }, 1500);
+            }
+        }
+
+
     }
 
     function initProgramAlpha(i){
