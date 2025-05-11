@@ -77,7 +77,7 @@ var initProgram = setTimeout(function(){
     var $skill2 = "Experience in AWS infrastructure, Microsofot Azura cloud, and Database management systems.";
     var $skill3 = "Knowledge ensuring systems and processes comply with relevant laws and requlations such as NIST and PCI DSS.";
     var $skill4 = "Strong grasp of multiple programming languages.";
-    var $sill5 = "Secure coding practices and standards.";
+    var $skill5 = "Secure coding practices and standards.";
     function initIdentityResults(i){
         $("#message").addClass("sign cursor").text(message.substring(0, i));
         if(i < message.length){
