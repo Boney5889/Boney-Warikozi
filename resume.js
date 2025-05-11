@@ -15,11 +15,13 @@ setTimeout(function() {
 }, 1500);
 
 var initProgram = setTimeout(function(){
-    var greeting = "Education";
+
     var job = "Unversity of Marland Globle Compass"
     var message = "RUNNING SECURITY ARCHITECH RESUME FOR BONEY";
     var $identityDiv = $("#identity-results");
-    var $name = "Unversity of Marland Globle Compass";
+    var greeting = "";
+    var $edu = "Unversity of Marland Globle Compass";
+    var $name = "Education";
     var $alias = " Aug 2023 - Aug 2025"
     var $occupation  = "Software Development and Security";
     var $frontEnd  = "Bachelor’s degree in software development and security\n" +
@@ -36,7 +38,7 @@ var initProgram = setTimeout(function(){
     var $frontEndAnimation = "WORK EXPERIENCE";
     var $cmsDevelopment = "Charter Communication - Spectrum";
     var $wordpress = "April 2022–present";
-    var $design = "Bussines Class level 5+";
+    var $design = "Business Class level 5+";
     var $webDesign = "• Install and maintain internet, voice, and cable services.\n \n" +
         "• Troubleshoot technical issues at customer premises.\n \n" +
         "• Optimize network performance and reliability.\n \n" +
@@ -71,12 +73,11 @@ var initProgram = setTimeout(function(){
     var $title = "Habits"
     var $myhabits = "Dedicated technologist combining rigorous analytical thinking with disciplined physical training practices. Through consistent engagement in competitive combat sports (Boxing and Muay Thai), I've developed exceptional mental resilience and strategic problem-solving abilities. These athletic pursuits complement my technical expertise in Computer Science, fostering a unique combination of logical precision and creative solution development. Regular participation in high-intensity training sessions has honed my time management skills, allowing me to maintain peak academic performance while pursuing advanced technical projects";
     var $skills = "Skills";
-    var $skill1 = "Knowledge of DevSecOps practices and tools.";
+    var $skill1 = "Knowledge of DevSecOps practices and tools";
     var $skill2 = "Experience in AWS infrastructure, Microsofot Azura cloud, and Database management systems.";
     var $skill3 = "Knowledge ensuring systems and processes comply with relevant laws and requlations such as NIST and PCI DSS.";
     var $skill4 = "Strong grasp of multiple programming languages.";
-    var $skill5 = "Secure coding practices and standards.";
-
+    var $sill5 = "Secure coding practices and standards.";
     function initIdentityResults(i){
         $("#message").addClass("sign cursor").text(message.substring(0, i));
         if(i < message.length){
@@ -101,6 +102,8 @@ var initProgram = setTimeout(function(){
                 }, 350);  // Dot Speed
             }
             loadingResume();
+
+
             function initName(i){
                 $("#name").addClass("sign cursor").text($name.substring(0, i));
                 if(i < $name.length){
@@ -110,7 +113,7 @@ var initProgram = setTimeout(function(){
                 }else{
                     $("#name").removeClass("cursor");
                     setTimeout(function() {
-                        initAlias(0);
+                        initEducation(0);
                     }, 1500);
                 }
             }
@@ -119,6 +122,21 @@ var initProgram = setTimeout(function(){
             }, 2500);
 
         }
+
+        function initEducation(i){
+            $("#edu").addClass("sign cursor").text($edu.substring(0, i));
+            if(i < $edu.length){
+                setTimeout(function(){
+                    initEducation(i + 1);
+                }, 35);
+            }else{
+                $("#edu").removeClass("cursor");
+                setTimeout(function() {
+                    initAlias(0);
+                }, 1500);
+            }
+        }
+
         function initAlias(i){
             $("#alias").addClass("sign cursor").text($alias.substring(0, i));
             if(i < $alias.length){
