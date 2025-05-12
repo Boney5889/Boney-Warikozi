@@ -53,7 +53,7 @@ var initProgram = setTimeout(function(){
         "• Find ways for customers to get the most out of their wireless\n" +
         "network.";
     var $h = "Profile";
-    var $habitpara = "As a graduate in Cyber Operations\n" +
+    var $habitpara = "As a student near graduation in Cyber Operations\n" +
         "with a specialization in software\n" +
         "development and security, I bring\n" +
         "comprehensive knowledge of the\n" +
